@@ -1,0 +1,10 @@
+<input type="text" placeholder="Recipe name" #recipeName />
+<br />
+<br />
+<button class="button" (click)="findRecipeByName()">Find</button>
+
+<br />
+
+<h3>{{ foundRecipe?.name | uppercase }}</h3>
+<h4>{{ foundRecipe?.author | uppercase }}</h4>
+<p>{{ foundRecipe?.description }}</p>

@@ -1,0 +1,25 @@
+h2 {
+  font-family: arial, sans-serif;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  height: auto;
+}
+
+td,
+th {
+  border: 1px solid palevioletred;
+  text-align: left;
+  padding: 8px;
+}
+
+thead {
+  background-color: palevioletred;
+}
+
+tr:nth-child(even) {
+  background-color: palevioletred;
+}

@@ -1,0 +1,16 @@
+h3,
+h4,
+p {
+  font-family: arial, sans-serif;
+}
+
+button {
+  background-color: palevioletred;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-right: 2%;
+}

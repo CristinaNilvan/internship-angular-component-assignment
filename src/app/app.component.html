@@ -1,0 +1,26 @@
+<h1>{{ "Recipes App" | customPipe: 10 }}</h1>
+<p>What recipes do you want to see?</p>
+
+<div class="buttons-container">
+  <button (click)="setApprovedStatusToTrue()">Approved recipes</button>
+  <button (click)="setApprovedStatusToFalse()">Unapproved recipe</button>
+</div>
+
+<app-list-recipes
+  [approvedStatus]="recipesApprovedStatus"
+  (numberOfRecipesByApprovedStatus)="
+    getRecipesByApprovedStatusCountHandler($event)
+  "
+></app-list-recipes>
+
+<p>Click to see the number of recipes</p>
+<button (click)="toggleNumberOfRecipes()">
+  {{ showNumberOfRecipes ? "Hide" : "Show" }}
+</button>
+<p *ngIf="showNumberOfRecipes">{{ numberOfRecipesByApprovedStatus }}</p>
+
+<br />
+<br />
+
+<p>Find a recipe</p>
+<app-get-recipe-by-name></app-get-recipe-by-name>
